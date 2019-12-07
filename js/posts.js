@@ -35,9 +35,18 @@ function onLikesButtonCLicked() {
 }
 
 function onCommentButtonClicked() {
-    console.log(comments);
     var comment = document.getElementById('post-comment').value;
     comments.unshift(comment);
     console.log(comments);
+    popuateComments();
+}
 
+function popuateComments() {
+    var html = '<div>';
+    comments.forEach(function(value, index) {
+        html += "<div id='comment" + index + "'class='posted-comment-card'<p>" + value + "</p></div>";
+    });
+    html += '</div>';
+    document.getElementById('postedCommentsSection').innerHTML = html;
+    document.getElementById('postedCommentsSection').style.background = 'grey';
 }
