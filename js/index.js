@@ -42,9 +42,11 @@ function closePostsDialog() {
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     var modal = document.getElementsByClassName("modal");
-    if (event.target == modal) {
-        modal[0].style.display = "none";
-        modal[1].style.display = "none";
-        modal[2].style.display = "none";
+    for (var i = 0; i < modal.length; i++) {
+        if (event.target == modal[i]) {
+            modal[0].style.display = "none";
+            modal[1].style.display = "none";
+            modal[2].style.display = "none";
+        }
     }
 }

@@ -28,8 +28,10 @@
     <div id="sign-up-modal" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
-            <span class="close" onclick="closeSignUpDialog()">&times;</span>
-            <p class="model-heading">Get Started</p>
+            <div style="border-bottom: 1px solid black;padding-bottom: 10px;">
+                <span class="close" onclick="closeSignUpDialog()">&times;</span>
+                <span class="model-heading">Get Started</span>
+            </div>
             <form>
                 <div class="form-group">
                     <label for="name">Name</label>
@@ -54,8 +56,10 @@
     <div id="sign-in-modal" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
-            <span class="close" onclick="closeSignInDialog()">&times;</span>
-            <p class="model-heading">Welcome back!</p>
+            <div style="border-bottom: 1px solid black;padding-bottom: 10px;">
+                <span class="close" onclick="closeSignInDialog()">&times;</span>
+                <span class="model-heading">Welcome back!</span>
+            </div>
             <form>
                 <div class="form-group">
                     <label for="user-name">Username</label>
@@ -72,8 +76,10 @@
     </div>
     <div id="create-post-modal" class="modal">
         <div class="modal-content">
-            <span class="close" onclick="closePostsDialog()">&times;</span>
-            <p class="model-heading">Pen Your Post</p>
+            <div style="border-bottom: 1px solid black;padding-bottom: 10px;">
+                <span class="close" onclick="closePostsDialog()">&times;</span>
+                <span class="model-heading">Pen Your Post</span>
+            </div>
             <form>
                 <div class="form-group">
                     <label for="post-title">Title</label>
@@ -88,7 +94,7 @@
         </div>
     </div>
     <div class="posts-btn">
-        <button type="button" class="btn btn-warning" onclick="window.open('html/bloglist.html')">All Posts</button>
+        <button type="button" class="btn btn-warning" onclick="window.open('html/postslist.html')">All Posts</button>
         <button type="button" class="btn btn-warning" onclick="openPostsDialog()">Create Post</button>
     </div>
     <script type="text/javascript" src="./js/index.js"></script>
