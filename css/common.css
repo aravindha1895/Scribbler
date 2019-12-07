@@ -17,16 +17,20 @@
 #header-logo #logo {
     font-family: 'Montez', cursive;
     color: blue;
-    font-size: 30px;
+    font-size: 35px;
 }
 
 #header-subheading {
     font: 'Ubuntu Mono';
+    font-size: 15px;
 }
 
 #header {
     display: block;
 }
+
+
+/* CSS for modal */
 
 .modal {
     display: none;
@@ -49,6 +53,7 @@
     /* Fallback color */
     background-color: rgba(0, 0, 0, 0.4);
     /* Black w/ opacity */
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -66,5 +71,53 @@
 .model-heading {
     display: inline-block;
     padding-bottom: 5px;
-    border-bottom: 1px solid #888;
+}
+
+.modal-content form {
+    margin-top: 15px;
+    position: relative;
+}
+
+
+/* The Close Button */
+
+.close {
+    color: #aaaaaa;
+    display: inline-block;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-success {
+    width: 100%;
+}
+
+#sign-in-disclosure {
+    text-align: center;
+    padding-top: 5px;
+    font-size: 15px;
+}
+
+.posts-btn {
+    margin: auto;
+    padding: 10px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+#create-post-modal .modal-content {
+    width: 80%;
+}
+
+.btn {
+    border-radius: 0px;
 }
