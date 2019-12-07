@@ -3,3 +3,26 @@
     background: white;
     border: none;
 }
+
+.custom-container {
+    padding-top: 80px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.btn {
+    border-radius: 0px;
+}
+
+#post-contents {
+    margin-top: 20px;
+}
+
+.comment-section,
+.posted-comments {
+    padding: 10px;
+}
+
+h4 {
+    text-align: center;
+}

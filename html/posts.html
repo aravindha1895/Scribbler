@@ -24,18 +24,22 @@
             <button type="button" id="signin-btn" onclick="openSignInDialog()" class="btn btn-primary">Sign In</button>
         </div>
     </div>
-    <div>
+    <div class="custom-container">
         <form>
+            <h4 id="title">Every thing you should know about module and require in node.js</h4>
             <div class="form-group">
                 <input type="text" class="form-control" id="post-title-edit" />
+            </div>
+            <div id="authorSection">
+                <span id="authName">Sristhi Gupta</span>
                 <span>
-                    <button type="button" onclick="onEditButtnClicked()" class="btn btn-danger">Edit <i class="fa fa-edit"></i></button>
+                    <button style="float:right;" id="edit-save-button" type="button" onclick="onEditButtnClicked()" class="btn btn-danger">Edit <i class="fa fa-edit"></i></button>
                 </span>
             </div>
             <div class="form-group">
                 <textarea class="form-control" id="post-contents" rows="10"></textarea>
             </div>
-            <button type="button" class="btn btn-danger" onclick="onLikesButtonCLicked()"><i class="fa fa-thumbs-up"></i>Like </button>
+            <button type="button" id="likeBtn" class="btn btn-danger" onclick="onLikesButtonCLicked()"><i class="fa fa-thumbs-up"></i>Like </button>
         </form>
         <p id="likesCount">Be the first one to like this!</p>
     </div>
